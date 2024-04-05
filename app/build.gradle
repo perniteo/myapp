@@ -18,6 +18,12 @@ plugins {
 group = 'bitcamp'
 version = '0.0.1-SNAPSHOT'
 
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
@@ -140,9 +146,3 @@ javadoc {
 //run {
 //    standardInput = System.in
 //}
-
-configurations {
-    compileOnly {
-        extendsFrom annotationProcessor
-    }
-}
