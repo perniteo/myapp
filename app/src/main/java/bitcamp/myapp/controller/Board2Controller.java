@@ -36,6 +36,7 @@ public class Board2Controller {
   @GetMapping("form")
   public void form() throws Exception {
   }
+  
 
   @PostMapping("add")
   public String add(
